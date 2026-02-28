@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFENC</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bgParticles"></canvas>
+    <div id="cur"></div>
+    <div id="cur2"></div>
+
+    <div id="loader">
+        <div class="ld-outer">
+            <div class="ld-ring1"></div>
+            <div class="ld-ring2"></div>
+            <img class="ld-logo-img" src="logo.png" alt="FFENC Logo">
+        </div>
+        <div class="ld-bar"></div>
+        <div class="ld-text">Initializing FFENC...</div>
+    </div>
+
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="logo.png" alt="FFENC Logo">
+            <span>FF<em>ENC</em></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#members">Team</a></li>
+            <li><a href="#transparency">Our Pledge</a></li>
+            <li><a href="#store">Store</a></li>
+        </ul>
+        <button class="nav-btn"
+            onclick="document.getElementById('contact-footer').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <canvas id="heroCanvas"></canvas>
+        <div class="scanlines"></div>
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <div class="hero-logo-wrap">
+            <img src="logo.png" alt="FFENC Logo">
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <div class="blink-dot"></div>Free Fire Esports Nepal Community
+            </div>
+            <h1 class="hero-h1">
+                <span class="line1">Welcome to FFENC</span>
+                <span class="line2">Nepal's Non-Profit Esports Community</span>
+            </h1>
+            <p class="hero-sub">Built by players, for players. We develop talent, run fair competitions, and elevate
+                Nepalese Free Fire to the global stage with zero commercial bias.</p>
+
+            <div class="hero-founder">
+                <img class="founder-img" src="lrffenc.png" alt="LR - Founder of FFENC">
+                <div class="founder-info">
+                    <div class="founder-tag">⚔ Founder & Leader of FFENC</div>
+                    <div class="founder-name">L R</div>
+                    <div class="founder-title">Founder & Leader of FFENC</div>
+                    <div class="founder-desc">Pioneering non-profit esports in Nepal giving every underdog team the
+                        platform they deserve.</div>
+                </div>
+            </div>
+
+            <a href="#about" class="hero-cta">
+                <div class="cta-pulse"></div>Join The Community
+            </a>
+        </div>
+    </section>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item"><span class="ti-r">Free Fire Esports Nepal</span></div>
+            <div class="ticker-item"><span class="ti-b">Non-Profit Community</span></div>
+            <div class="ticker-item"><span class="ti-r">Fair Play System</span></div>
+            <div class="ticker-item"><span class="ti-b">Tournament Management</span></div>
+            <div class="ticker-item"><span class="ti-r">Kathmandu, Nepal 🇳🇵</span></div>
+            <div class="ticker-item"><span class="ti-b">Tournament Production</span></div>
+            <div class="ticker-item"><span class="ti-r">Tournament GFX</span></div>
+            <div class="ticker-item"><span class="ti-b">Free Fire Esports Nepal</span></div>
+            <div class="ticker-item"><span class="ti-r">Non-Profit Community</span></div>
+            <div class="ticker-item"><span class="ti-b">Fair Play System</span></div>
+            <div class="ticker-item"><span class="ti-r">Tournament Management</span></div>
+            <div class="ticker-item"><span class="ti-b">Kathmandu, Nepal 🇳🇵</span></div>
+            <div class="ticker-item"><span class="ti-r">Tournament Production</span></div>
+            <div class="ticker-item"><span class="ti-b">Tournament GFX</span></div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-img-wrap rev-l">
+                <div class="about-img-frame">
+                    <img src="lrffenc.png" alt="LR - Founder of FFENC">
+                    <div class="about-overlay"><span>LR FOUNDER & LEADER OF FFENC</span></div>
+                    <div class="about-badge">Founder</div>
+                </div>
+            </div>
+            <div class="rev-r">
+                <div class="sec-label">Who We Are</div>
+                <h2 class="sec-title">About <span class="b">FFENC</span></h2>
+                <p class="sec-sub">Nepal's only 100% non-profit esports organization built for players, run with
+                    complete financial transparency, and laser-focused on elevating Free Fire at every level.</p>
+                <div class="about-pillars">
+                    <div class="pillar rev" style="transition-delay:.05s">
+                        <div class="pillar-icon">🎯</div>
+                        <div>
+                            <div class="pillar-title">Talent Development</div>
+                            <div class="pillar-desc">We identify, nurture, and spotlight undiscovered Free Fire talent
+                                from every corner of Nepal.</div>
+                        </div>
+                    </div>
+                    <div class="pillar rev" style="transition-delay:.12s">
+                        <div class="pillar-icon">⚖️</div>
+                        <div>
+                            <div class="pillar-title">Fair Competition</div>
+                            <div class="pillar-desc">Transparent rules, unbiased tournament administration, and a strict
+                                no-favouritism policy.</div>
+                        </div>
+                    </div>
+                    <div class="pillar rev" style="transition-delay:.19s">
+                        <div class="pillar-icon">🌏</div>
+                        <div>
+                            <div class="pillar-title">Equal Opportunities</div>
+                            <div class="pillar-desc">Every player deserves a stage. We bridge the gap between local
+                                grassroots and international esports.</div>
+                        </div>
+                    </div>
+                    <div class="pillar rev" style="transition-delay:.26s">
+                        <div class="pillar-icon">💰</div>
+                        <div>
+                            <div class="pillar-title">Full Transparency</div>
+                            <div class="pillar-desc">Every rupee charged for paid services is reinvested into community
+                                tournaments. No exceptions.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="sec-head c rev">
+            <div class="sec-label">What We Do</div>
+            <h2 class="sec-title">Our <span class="b">Features</span></h2>
+            <p class="sec-sub">Six pillars that define how FFENC serves the Nepalese Free Fire community.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feat-card rev" data-num="01" style="transition-delay:.0s"><span class="feat-icon">🏆</span>
+                <div class="feat-title">Free Tournament Management</div>
+                <div class="feat-desc">End-to-end management for free-entry community events at zero cost. Brackets,
+                    scheduling, rules enforcement, and result announcements handled professionally.</div>
+            </div>
+            <div class="feat-card rev" data-num="02" style="transition-delay:.08s"><span class="feat-icon">📡</span>
+                <div class="feat-title">Paid Event Production</div>
+                <div class="feat-desc">International-standard live broadcasts for paid prize pool tournaments. Every
+                    rupee charged is reinvested into future free community events — guaranteed.</div>
+            </div>
+            <div class="feat-card rev" data-num="03" style="transition-delay:.16s"><span class="feat-icon">🤝</span>
+                <div class="feat-title">Community Scrims</div>
+                <div class="feat-desc">Regular scrimmages for practice and team building. Free to join, open to all
+                    skill levels — from beginner to pro. Weekly schedule maintained year-round.</div>
+            </div>
+            <div class="feat-card rev" data-num="04" style="transition-delay:.24s"><span class="feat-icon">⚖️</span>
+                <div class="feat-title">Fair Play System</div>
+                <div class="feat-desc">Strict anti-cheat protocols, transparent rulebooks, and an impartial admin team
+                    ensuring every match is decided purely by skill and teamwork.</div>
+            </div>
+            <div class="feat-card rev" data-num="05" style="transition-delay:.32s"><span class="feat-icon">🌟</span>
+                <div class="feat-title">Talent Promotion</div>
+                <div class="feat-desc">Our UDG Spotlight program creates dedicated content, interview segments, and
+                    broadcast features specifically for undiscovered players and rising teams.</div>
+            </div>
+            <div class="feat-card rev" data-num="06" style="transition-delay:.40s"><span class="feat-icon">🚫</span>
+                <div class="feat-title">No Sponsor-Bias Policy</div>
+                <div class="feat-desc">FFENC will never allow commercial sponsorships to influence tournament results,
+                    team selections, or any community decision. Absolute zero tolerance policy.</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-banner">
+        <div class="stats-inner">
+            <div class="stat-block rev">
+                <div class="stat-n" data-val="500" data-suf="+">0+</div>
+                <div class="stat-l">Active Players</div>
+            </div>
+            <div class="stat-block rev" style="transition-delay:.08s">
+                <div class="stat-n" data-val="50" data-suf="+">0+</div>
+                <div class="stat-l">Tournaments Run</div>
+            </div>
+            <div class="stat-block rev" style="transition-delay:.16s">
+                <div class="stat-n" data-val="100" data-suf="%">0%</div>
+                <div class="stat-l">Funds Reinvested</div>
+            </div>
+            <div class="stat-block rev" style="transition-delay:.24s">
+                <div class="stat-n" data-val="1" data-suf="">1</div>
+                <div class="stat-l">Non-Profit Org</div>
+            </div>
+        </div>
+    </div>
+
+    <section id="members">
+        <div class="sec-head c rev">
+            <div class="sec-label">Our People</div>
+            <h2 class="sec-title">The <span class="b">FFENC</span> <span class="r">Team</span></h2>
+            <p class="sec-sub">Meet the passionate individuals who dedicate their time to elevating Nepalese Free Fire
+                esports — every role, zero pay.</p>
+        </div>
+        <div class="members-grid">
+            <div class="member-card founder-card rev" style="transition-delay:.0s">
+                <div class="member-photo">
+                    <img src="lrffenc.png" alt="L.R - Founder">
+                    <div class="member-role-tag">Founder</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">L.R</div>
+                    <div class="member-field">Founder & Leader • Tournament Director • Community Head</div>
+                    <div class="member-socials">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">ig</a>
+                        <a href="#" title="YouTube">yt</a>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.07s">
+                <div class="member-photo">
+                    <img src="shadowbyte.png" alt="ShadowByte">
+                    <div class="member-role-tag red">Production</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">ShadowByte</div>
+                    <div class="member-field red">Head of Production</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">ig</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.14s">
+                <div class="member-photo">
+                    <img src="neonbrush.png" alt="NeonBrush">
+                    <div class="member-role-tag">GFX / Design</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">NeonBrush</div>
+                    <div class="member-field">Lead GFX Designer</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">ig</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.21s">
+                <div class="member-photo">
+                    <img src="anupffenc.png" alt="Anup Shrestha">
+                    <div class="member-role-tag red">Casting</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">Anup Shrestha</div>
+                    <div class="member-field red">Head Caster</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">yt</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.28s">
+                <div class="member-photo">
+                    <img src="zerolag.png" alt="ZeroLag">
+                    <div class="member-role-tag">Admin</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">ZeroLag</div>
+                    <div class="member-field">Tournament Administrator</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">ig</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.35s">
+                <div class="member-photo">
+                    <img src="frostbyte.png" alt="FrostByte">
+                    <div class="member-role-tag red">Community</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">FrostByte</div>
+                    <div class="member-field red">Community Manager</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">ig</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.42s">
+                <div class="member-photo">
+                    <img src="pixelcraft.png" alt="PixelCraft">
+                    <div class="member-role-tag">VFX</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">PixelCraft</div>
+                    <div class="member-field">VFX Artist</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">ig</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.49s">
+                <div class="member-photo">
+                    <img src="rapidfire.png" alt="RapidFire">
+                    <div class="member-role-tag red">Casting</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">RapidFire</div>
+                    <div class="member-field red">Caster & Analyst</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">yt</a></div>
+                </div>
+            </div>
+            <div class="member-card rev" style="transition-delay:.56s">
+                <div class="member-photo">
+                    <img src="pramishffenc.png" alt="PRAMISH">
+                    <div class="member-role-tag">Dev</div>
+                </div>
+                <div class="member-body">
+                    <div class="member-name">PRAMISH</div>
+                    <div class="member-field">Web Developer</div>
+                    <div class="member-socials"><a href="#">f</a><a href="#">ig</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transparency">
+        <div class="sec-head c rev">
+            <div class="sec-label">Our Pledge</div>
+            <h2 class="sec-title">Why <span class="r">FFENC</span> Is Different</h2>
+            <p class="sec-sub">Our entire structure is built around one truth: the players come first. Always.</p>
+        </div>
+        <div class="transp-grid">
+            <div class="transp-card rev" style="transition-delay:.0s">
+                <div class="transp-num">01</div><span class="transp-icon">🚫</span>
+                <div class="transp-title">No Paid Sponsorships</div>
+                <div class="transp-desc">We don't partner with game publishers or platforms for paid promotions. Our
+                    community stays independent and player-first always.</div>
+            </div>
+            <div class="transp-card rev" style="transition-delay:.08s">
+                <div class="transp-num">02</div><span class="transp-icon">💸</span>
+                <div class="transp-title">100% Revenue Reinvested</div>
+                <div class="transp-desc">Every rupee earned from paid event services goes directly into funding free
+                    tournaments for the community. Zero profit extracted.</div>
+            </div>
+            <div class="transp-card rev" style="transition-delay:.16s">
+                <div class="transp-num">03</div><span class="transp-icon">🏳️</span>
+                <div class="transp-title">No Commercial Influence</div>
+                <div class="transp-desc">No brand or sponsor can influence our tournament decisions, team selections, or
+                    community policies. Period. Not negotiable.</div>
+            </div>
+            <div class="transp-card rev" style="transition-delay:.24s">
+                <div class="transp-num">04</div><span class="transp-icon">📋</span>
+                <div class="transp-title">Transparent Rulebooks</div>
+                <div class="transp-desc">All tournament rules are publicly published before events. Disputes are handled
+                    by an impartial admin panel with zero conflicts of interest.</div>
+            </div>
+            <div class="transp-card rev" style="transition-delay:.32s">
+                <div class="transp-num">05</div><span class="transp-icon">🎯</span>
+                <div class="transp-title">Skill-Only Advancement</div>
+                <div class="transp-desc">Your results are determined by skill, strategy, and performance — not
+                    sponsorship deals, clout, or personal connections. Purely meritocratic.</div>
+            </div>
+            <div class="transp-card rev" style="transition-delay:.40s">
+                <div class="transp-num">06</div><span class="transp-icon">🌟</span>
+                <div class="transp-title">Underdog First Philosophy</div>
+                <div class="transp-desc">Our UDG Spotlight ensures unknown talented players get the same visibility as
+                    established teams. We believe in equal opportunity for all.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="store">
+        <div class="sec-head c rev">
+            <div class="sec-label">Official Merchandise</div>
+            <h2 class="sec-title">FFENC <span class="b">Store</span></h2>
+            <p class="sec-sub">One product. One mission. All proceeds support free community tournaments.</p>
+        </div>
+        <div class="store-notice rev">
+            <div class="store-notice-icon">ℹ️</div>
+            <div><strong style="color:var(--blue)">Store Policy:</strong> FFENC offers <strong>only the Official
+                    Jersey</strong>. There are <strong>no paid games</strong>, <strong>no sponsored products</strong>,
+                <strong>no third-party promotions</strong>, and <strong>no team sponsorship merchandise</strong>. FFENC
+                is a non-profit community and does not promote paid game sponsorships or external commercial influence.
+                Every purchase directly funds free tournaments.</div>
+        </div>
+        <div class="store-center rev">
+            <div class="jersey-card">
+                <div class="jersey-img">
+                    <img src="j1.jpeg" alt="FFENC Official Jersey">
+                    <div class="jersey-badge">Official</div>
+                </div>
+                <div class="jersey-body">
+                    <div class="jersey-name">FFENC Official Jersey</div>
+                    <div class="jersey-tag">Limited Edition • 2025</div>
+                    <div class="jersey-price">NPR 1,400</div>
+                    <hr class="jersey-divider">
+                    <ul class="jersey-features">
+                        <li>Official FFENC branding & Nepal flag</li>
+                        <li>Premium breathable esports fabric</li>
+                        <li>Exclusive community edition design</li>
+                        <li>Proceeds fund free tournaments</li>
+                    </ul>
+                    <a href="https://www.instagram.com/ffenc/" target="_blank" class="jersey-btn"><span>BUY NOW</span></a>
+                    <div class="np-badge">🇳🇵 Made with pride for Nepal's Free Fire community</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="f-glow-line"></div>
+    <footer id="contact-footer">
+        <div class="footer-top">
+            <div class="f-brand">
+                <div class="brand-logo">
+                    <img src="logo.png" alt="FFENC Logo">
+                    <span>FF<em>ENC</em></span>
+                </div>
+                <p>Free Fire Esports Nepal Community Nepal's only 100% non-profit esports organization. Built by
+                    players, for players. Every rupee reinvested. No exceptions.</p>
+                <div class="f-contact">
+                    <a href="mailto:ffesportsnepal@gmail.com">📧 ffesportsnepal@gmail.com</a>
+                    <a href="#">📍 Kathmandu, Nepal 🇳🇵</a>
+                </div>
+            </div>
+            <div class="f-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#about">About FFENC</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#members">Our Team</a></li>
+                    <li><a href="#store">Store</a></li>
+                    <li><a href="#transparency">Our Pledge</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61582639197077">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ffenc/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@FFESPORTSNEPALCOMMUNITY">YouTube</a></li>
+                    <li><a href="https://www.tiktok.com/@ffesportsnepalcommunity?lang=en">TikTok</a></li>
+                    <li><a href="https://discord.gg/MZ4hUNf9SC">Discord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FFENC – Non-Profit Esports Community. All Rights Reserved.</p>
+            <div class="dev-credit">Developed By <span>FFENC</span> || <span>PRAMISH</span></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
